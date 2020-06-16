@@ -29,7 +29,7 @@ meshGateway:
   replicas: 1
   wanAddress:
     useNodeIP: false
-    #host: "52.149.187.167"
+    host: "10.5.1.200"
   service:
     enabled: true
     type: 'NodePort'
