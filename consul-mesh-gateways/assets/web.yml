@@ -18,7 +18,7 @@
             app: web
           annotations:
             "consul.hashicorp.com/connect-inject": "true"
-            "consul.hashicorp.com/connect-service-upstreams": "api:9090"
+            "consul.hashicorp.com/connect-service-upstreams": "api:9091"
         spec:
           containers:
           - name: web
@@ -29,7 +29,7 @@
             - name: "LISTEN_ADDR"
               value: "0.0.0.0:9090"
             - name: "UPSTREAM_URIS"
-              value: "http://api:9090"
+              value: "http://localhost:9091"
             - name: "NAME"
               value: "web"
             - name: "MESSAGE"
