@@ -1,6 +1,6 @@
 ---
     # Web frontend
-    
+
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -29,15 +29,15 @@
             - name: "LISTEN_ADDR"
               value: "0.0.0.0:9090"
             - name: "UPSTREAM_URIS"
-              value: "http://localhost:9091"
+              value: "http://api:9091"
             - name: "NAME"
               value: "web"
             - name: "MESSAGE"
               value: "Hello World"
-    
+
 ---
     # Service to expose web frontend
-    
+
     apiVersion: v1
     kind: Service
     metadata:
